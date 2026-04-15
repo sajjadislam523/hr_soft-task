@@ -13,7 +13,6 @@ const CommunitySection = ({
     return (
         <section
             style={{
-                fontFamily: "Lato, sans-serif",
                 padding: "1rem",
                 margin: "0 auto",
             }}

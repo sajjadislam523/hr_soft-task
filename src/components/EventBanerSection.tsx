@@ -38,7 +38,7 @@ const iconMap: Record<StatItem["iconType"], JSX.Element> = {
 
 const EventBannerSection = () => {
     return (
-        <section className="w-full font-sans">
+        <section className="w-full">
             {/* ── Banner ── */}
             <div className="bg-[#f5d5d0] px-4 py-6 md:px-8 md:py-8">
                 <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-6">
@@ -83,7 +83,7 @@ const EventBannerSection = () => {
             </div>
 
             {/* ── Stats bar ── */}
-            <div className="border-b border-gray-200 bg-white px-4 py-5 md:px-8">
+            <div className=" bg-white px-4 py-5 md:px-8">
                 <div className="max-w-5xl mx-auto grid grid-cols-3 sm:grid-cols-6 gap-4">
                     {stats.map((stat) => (
                         <div
@@ -96,7 +96,7 @@ const EventBannerSection = () => {
                             <span className="text-base md:text-lg font-bold text-gray-800">
                                 {stat.value}
                             </span>
-                            <span className="text-xs text-gray-500">
+                            <span className="text-base text-gray-500">
                                 {stat.label}
                             </span>
                         </div>

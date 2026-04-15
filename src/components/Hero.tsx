@@ -2,7 +2,6 @@ import { TfiFacebook, TfiLinkedin, TfiTwitterAlt } from "react-icons/tfi";
 import logo from "../assets/logo.png";
 import type { NoticeItem, Person } from "../types/types";
 import CommunitySection from "./CommunitySection";
-import EventBannerSection from "./EventBanerSection";
 import Navbar from "./Navbar";
 
 const notices: NoticeItem[] = [
@@ -76,7 +75,6 @@ const Hero = () => {
                     console.log("Details clicked:", person)
                 }
             />
-            <EventBannerSection />
         </div>
     );
 };
