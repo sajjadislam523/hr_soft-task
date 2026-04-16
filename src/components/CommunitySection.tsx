@@ -16,6 +16,7 @@ const CommunitySection = ({
                 padding: "1rem",
                 margin: "0 auto",
             }}
+            className="max-w-6xl mx-auto"
         >
             <div
                 style={{
