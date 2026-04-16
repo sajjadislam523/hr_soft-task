@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* Desktop row */}
             <div className="flex items-center justify-between">
                 {/* Desktop links */}
-                <div className="hidden md:flex items-center gap-6 font-medium">
+                <div className="hidden lg:flex items-center gap-6 font-medium">
                     <span
                         onClick={() => setActive("home")}
                         className={linkClass("home")}
@@ -97,12 +97,12 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop sign in button */}
-                <button className="hidden md:block bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-600 transition text-sm font-medium">
+                <button className="hidden lg:block bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-600 transition text-sm font-medium">
                     Member Sign In
                 </button>
 
                 {/* Mobile: sign in + hamburger */}
-                <div className="flex md:hidden items-center justify-between w-full">
+                <div className="flex lg:hidden items-center justify-between w-full">
                     <button className="bg-red-700 text-white px-3 py-1.5 rounded-md hover:bg-red-600 transition text-sm font-medium">
                         Member Sign In
                     </button>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
             {/* Mobile dropdown panel */}
             {mobileOpen && (
-                <div className="md:hidden mt-3 flex flex-col gap-1 border-t border-blue-200 pt-3">
+                <div className="lg:hidden mt-3 flex flex-col gap-1 border-t border-blue-200 pt-3">
                     {simpleLinks.map((label) => (
                         <span
                             key={label}
